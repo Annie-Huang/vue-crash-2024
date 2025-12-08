@@ -41,3 +41,9 @@ Scaffolding project in C:\react\vue-crash-2024...
 
 
    git init && git add -A && git commit -m "initial commit"
+
+
+-------------------------------------
+
+
+PS C:\react\vue-crash-2024> npm install
