@@ -1,0 +1,43 @@
+Vue.js Crash Course (https://www.youtube.com/watch?v=VeNfHj6MhgA)
+
+https://github.com/bradtraversy/vue-crash-2024
+https://github.com/Annie-Huang/vue-crash-2024
+
+==========================================================================
+
+PS C:\react> npm create vue@latest vue-crash-2024
+Need to install the following packages:
+create-vue@3.18.3
+Ok to proceed? (y) y
+
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'create-vue@3.18.3',
+npm warn EBADENGINE   required: { node: '^20.19.0 || >=22.12.0' },
+npm warn EBADENGINE   current: { node: 'v20.17.0', npm: '11.4.2' }
+npm warn EBADENGINE }
+
+> npx
+> create-vue vue-crash-2024
+
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  Select features to include in your project: (↑/↓ to navigate, space to select, a to toggle all, enter to confirm)
+│  none
+│
+│
+│
+◇  Select experimental features to include in your project: (↑/↓ to navigate, space to select, a to toggle all, enter to confirm)
+│  none
+│
+◇  Skip all example code and start with a blank Vue project?
+│  No
+
+Scaffolding project in C:\react\vue-crash-2024...
+│
+└  Done. Now run:
+
+   cd vue-crash-2024
+   npm install
+
+
+   git init && git add -A && git commit -m "initial commit"
