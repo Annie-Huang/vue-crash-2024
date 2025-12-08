@@ -47,3 +47,4 @@ Scaffolding project in C:\react\vue-crash-2024...
 
 
 PS C:\react\vue-crash-2024> npm install
+PS C:\react\vue-crash-2024> npm run format
