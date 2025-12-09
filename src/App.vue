@@ -5,6 +5,16 @@ export default {
     const name = 'John Doe';
     const status = 'active';
     const tasks = ['Task One', 'Task Two', 'Task Three'];
+
+    const toggleStatus = () => {
+      if (this.status === 'active') {
+        this.status = 'pending';
+      } else if (this.status === 'pending') {
+        this.status = 'inactive';
+      } else {
+        this.status = 'active';
+      }
+    };
   },
 };
 </script>
