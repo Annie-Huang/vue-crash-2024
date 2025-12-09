@@ -1,26 +1,6 @@
 <script>
-export default {
-  data() {
-    return {
-      name: 'John Doe',
-      // status: true,
-      status: 'pending',
-      tasks: ['Task One', 'Task Two', 'Task Three'],
-      link: 'https://google.com',
-    };
-  },
-  methods: {
-    toggleStatus() {
-      if (this.status === 'active') {
-        this.status = 'pending';
-      } else if (this.status === 'pending') {
-        this.status = 'inactive';
-      } else {
-        this.status = 'active';
-      }
-    },
-  },
-};
+// Composition API
+export default {};
 </script>
 
 <template>
