@@ -1,6 +1,12 @@
 <script>
 // Composition API
-export default {};
+export default {
+  setup() {
+    const name = 'John Doe';
+    const status = 'active';
+    const tasks = ['Task One', 'Task Two', 'Task Three'];
+  },
+};
 </script>
 
 <template>
