@@ -9,6 +9,17 @@ export default {
       link: 'https://google.com',
     };
   },
+  methods: {
+    toggleStatus() {
+      if (this.status === 'active') {
+        this.status = 'pending';
+      } else if (this.status === 'pending') {
+        this.status = 'inactive';
+      } else {
+        this.status = 'active';
+      }
+    },
+  },
 };
 </script>
 
@@ -25,4 +36,7 @@ export default {
   </ul>
   <!--  <a v-bind:href="link">Click for Google</a>-->
   <a :href="link">Click for Google</a>
+  <br />
+
+  <button v-on:click="toggleStatus">Change status</button>
 </template>
