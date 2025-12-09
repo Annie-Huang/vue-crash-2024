@@ -1,3 +1,14 @@
+<script>
+export default {
+  data() {
+    return {
+      name: 'John Doe',
+      status: true,
+    };
+  },
+};
+</script>
+
 <template>
-  <h1>Vue Jobs</h1>
+  <h1>{{ name }}</h1>
 </template>
