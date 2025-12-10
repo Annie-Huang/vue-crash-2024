@@ -16,6 +16,13 @@ const toggleStatus = () => {
     status.value = 'active';
   }
 };
+
+const addTask = () => {
+  if (newTask.value.trim() !== '') {
+    tasks.value.push(newTask.value);
+    newTask.value = '';
+  }
+};
 </script>
 
 <template>
@@ -28,6 +35,7 @@ const toggleStatus = () => {
   <form @submit.prevent="addTask">
     <label for="newTask">Add Task</label>
     <input type="text" name="newTask" id="newTask" v-model="newTask" />
+    <button type="submit">Submit</button>
   </form>
 
   <h3>Tasks:</h3>
