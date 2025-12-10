@@ -23,6 +23,10 @@ const addTask = () => {
     newTask.value = '';
   }
 };
+
+const deleteTask = (index) => {
+  tasks.value.splice(index, 1);
+};
 </script>
 
 <template>
