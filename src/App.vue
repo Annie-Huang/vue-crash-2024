@@ -5,6 +5,7 @@ import { ref } from 'vue';
 const name = ref('John Doe');
 const status = ref('active');
 const tasks = ref(['Task One', 'Task Two', 'Task Three']);
+const newTask = ref('');
 
 const toggleStatus = () => {
   if (status.value === 'active') {
@@ -26,7 +27,7 @@ const toggleStatus = () => {
 
   <form @submit.prevent="addTask">
     <label for="newTask">Add Task</label>
-    <input type="text" name="newTask" id="newTask" />
+    <input type="text" name="newTask" id="newTask" v-model="newTask" />
   </form>
 
   <h3>Tasks:</h3>
