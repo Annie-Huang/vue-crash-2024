@@ -3,6 +3,8 @@ Vue.js Crash Course (https://www.youtube.com/watch?v=VeNfHj6MhgA)
 https://github.com/bradtraversy/vue-crash-2024
 https://github.com/Annie-Huang/vue-crash-2024
 
+https://v2.tailwindcss.com/docs/guides/vue-3-vite
+
 ==========================================================================
 
 PS C:\react> npm create vue@latest vue-crash-2024
@@ -48,3 +50,5 @@ Scaffolding project in C:\react\vue-crash-2024...
 
 PS C:\react\vue-crash-2024> npm install
 PS C:\react\vue-crash-2024> npm run format
+
+PS C:\react\vue-crash-2024> npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
