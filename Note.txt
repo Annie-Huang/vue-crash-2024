@@ -6,6 +6,7 @@ https://github.com/Annie-Huang/vue-crash-2024
 https://v2.tailwindcss.com/docs/guides/vue-3-vite
 https://tailwindcss.com/docs/installation/using-vite
 https://vueschool.io/articles/vuejs-tutorials/master-tailwindcss-4-for-vue/
+https://tailwindcss.com/docs/theme
 
 ==========================================================================
 

@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import './base.css';
 
+@theme {
+  /* Define a custom font family */
+  --font-display: "Satoshi", sans-serif;
+
+  /* You can also extend default font families */
+  --font-sans: Poppins, sans-serif, "InterVariable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --grid-template-columns:  {
+    '70/30': '70% 28%';
+  }
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
