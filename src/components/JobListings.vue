@@ -1,6 +1,7 @@
 <script setup>
 import jobData from '@/jobs.json';
 import { ref } from 'vue';
+import JobListing from '@/components/JobListing.vue';
 
 // Similar to make this useState in react
 const jobs = ref(jobData);
@@ -14,7 +15,7 @@ const jobs = ref(jobData);
         Browse Jobs
       </h2>
       <div class="grid gird-cols-1 md:grid-cols-3 gap-6">
-        <div v-for="job in jobs" :key="job.id">{{ job.title }}</div>
+        <JobListing v-for="job in jobs" :key="job.id" :job="job" />
       </div>
     </div>
   </section>
