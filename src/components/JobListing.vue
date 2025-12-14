@@ -1,8 +1,17 @@
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, ref, computed } from 'vue';
 
-defineProps({
+const props = defineProps({
   job: Object,
+});
+
+const showFullDescription = ref(false);
+
+const truncatedDescription = computed(() => {
+  let description = props.job.description;
+  if (!showFullDescription.value) {
+    description = description.substring(0, 90) + '...';
+  }
 });
 </script>
 
