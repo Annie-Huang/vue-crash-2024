@@ -20,7 +20,7 @@ const jobs = ref(jobData);
       </h2>
       <div class="grid gird-cols-1 md:grid-cols-3 gap-6">
         <JobListing
-          v-for="job in jobs.slice(0, limit || job.length)"
+          v-for="job in jobs.slice(0, limit || jobs.length)"
           :key="job.id"
           :job="job"
         />
