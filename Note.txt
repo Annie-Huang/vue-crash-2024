@@ -8,6 +8,9 @@ https://tailwindcss.com/docs/installation/using-vite
 https://vueschool.io/articles/vuejs-tutorials/master-tailwindcss-4-for-vue/
 https://tailwindcss.com/docs/theme
 
+https://github.com/primefaces/primeicons
+https://primevue.org/icons
+
 ==========================================================================
 
 PS C:\react> npm create vue@latest vue-crash-2024
@@ -57,6 +60,6 @@ PS C:\react\vue-crash-2024> npm run format
 PS C:\react\vue-crash-2024> npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 
 PS C:\react\vue-crash-2024> npm install tailwindcss @tailwindcss/vite
-
+PS C:\react\vue-crash-2024> npm install primeicons
 
 
