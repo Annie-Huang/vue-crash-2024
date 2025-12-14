@@ -12,6 +12,7 @@ const truncatedDescription = computed(() => {
   if (!showFullDescription.value) {
     description = description.substring(0, 90) + '...';
   }
+  return description;
 });
 </script>
 
@@ -24,7 +25,7 @@ const truncatedDescription = computed(() => {
       </div>
 
       <div class="mb-5">
-        {{ job.description }}
+        {{ truncatedDescription }}
       </div>
 
       <h3 class="text-green-500 mb-2">{{ job.salary }} / Year</h3>
