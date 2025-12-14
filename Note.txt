@@ -70,4 +70,5 @@ PS C:\react\vue-crash-2024> npm i vue-router
 Try to no found page:
 http://localhost:3000/jobs/addfewafewa
 
+http://localhost:3000/jobs/1
 
