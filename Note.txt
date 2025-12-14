@@ -65,5 +65,6 @@ PS C:\react\vue-crash-2024> npm install -D tailwindcss@latest postcss@latest aut
 
 PS C:\react\vue-crash-2024> npm install tailwindcss @tailwindcss/vite
 PS C:\react\vue-crash-2024> npm install primeicons
+PS C:\react\vue-crash-2024> npm i vue-router
 
 
