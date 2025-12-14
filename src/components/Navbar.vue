@@ -31,9 +31,22 @@ const isActiveLink = (routePath) => {
 
           <div class="md:ml-auto">
             <div class="flex space-x-2">
-              <RouterLink
+              <!--              <RouterLink
                 to="/"
                 class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                >Home</RouterLink
+              >-->
+              <RouterLink
+                to="/"
+                :class="[
+                  isActiveLink('/')
+                    ? 'bg-green-900'
+                    : 'hover:bg-gray-900 hover:text-white',
+                  'text-white',
+                  'rounded-md',
+                  'px-3',
+                  'py-2',
+                ]"
                 >Home</RouterLink
               >
               <RouterLink
