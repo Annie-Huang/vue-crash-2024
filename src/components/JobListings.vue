@@ -5,6 +5,10 @@ import JobListing from '@/components/JobListing.vue';
 
 defineProps({
   limit: Number,
+  showButton: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 // Similar to make this useState in react
@@ -28,7 +32,7 @@ const jobs = ref(jobData);
     </div>
   </section>
 
-  <section class="m-auto max-w-lg my-10 px-6">
+  <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
     <a
       href="jobs.html"
       class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
