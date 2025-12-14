@@ -32,6 +32,12 @@ const truncatedDescription = computed(() => {
         <div>
           {{ truncatedDescription }}
         </div>
+        <button
+          @click="toggleFullDescription"
+          class="text-green-500 hover:text-green-600 mob-5"
+        >
+          {{ showFullDescription ? 'Less' : 'More' }}
+        </button>
       </div>
 
       <h3 class="text-green-500 mb-2">{{ job.salary }} / Year</h3>
