@@ -8,6 +8,22 @@ const route = useRoute();
 
 // We got path: '/jobs/:id', in router/index.js
 const jobId = route.params.id;
+
+const state = reactive({
+  job: {},
+  isLoading: true,
+});
+
+onMounted(async () => {
+  try {
+    const response = await axios.get(`http://localhost:5000/jobs/${jobId}`);
+    state.job = response.data;
+  } catch (error) {
+    console.error('Error fetching jobs', error);
+  } finally {
+    state.isLoading = false;
+  }
+});
 </script>
 
 <template>
