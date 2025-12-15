@@ -1,4 +1,14 @@
-<script setup></script>
+<script setup>
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
+import { reactive, onMounted } from 'vue';
+import { useRoute, RouterLink } from 'vue-router';
+import axios from 'axios';
+
+const route = useRoute();
+
+// We got path: '/jobs/:id', in router/index.js
+const jobId = route.params.id;
+</script>
 
 <template>
   <section class="bg-green-50">
