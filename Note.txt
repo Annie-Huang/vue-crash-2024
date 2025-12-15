@@ -70,6 +70,7 @@ PS C:\react\vue-crash-2024> npm install primeicons
 PS C:\react\vue-crash-2024> npm i vue-router
 PS C:\react\vue-crash-2024> npm i json-server
 PS C:\react\vue-crash-2024> npm i axios
+PS C:\react\vue-crash-2024> npm i vue-spinner
 
 
 PS C:\react\vue-crash-2024> npm run dev
