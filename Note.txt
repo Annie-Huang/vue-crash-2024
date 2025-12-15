@@ -11,6 +11,8 @@ https://tailwindcss.com/docs/theme
 https://github.com/primefaces/primeicons
 https://primevue.org/icons
 
+https://vuejs.org/guide/essentials/reactivity-fundamentals.html
+
 ==========================================================================
 
 PS C:\react> npm create vue@latest vue-crash-2024
