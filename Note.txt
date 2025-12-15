@@ -85,4 +85,5 @@ http://localhost:3000/
 http://localhost:3000/jobs
 http://localhost:3000/jobs/1
 http://localhost:3000/jobs/add
-http://localhost:3000/jobs/addfewafewa
+http://localhost:3000/jobs/addfewafewa  << 404 page not found
+http://localhost:3000/jobs/edit/1
