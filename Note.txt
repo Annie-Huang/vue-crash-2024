@@ -68,6 +68,10 @@ PS C:\react\vue-crash-2024> npm install primeicons
 PS C:\react\vue-crash-2024> npm i vue-router
 PS C:\react\vue-crash-2024> npm i json-server
 
+PS C:\react\vue-crash-2024> npm run dev
+PS C:\react\vue-crash-2024> npm run server      << can see data in http://localhost:5000/jobs
+
+
 
 Try to no found page:
 http://localhost:3000/jobs/addfewafewa
