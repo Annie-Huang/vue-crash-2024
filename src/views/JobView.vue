@@ -110,4 +110,8 @@ onMounted(async () => {
       </div>
     </div>
   </section>
+
+  <div v-else class="text-center text-gray-500 py-6">
+    <PulseLoader />
+  </div>
 </template>
