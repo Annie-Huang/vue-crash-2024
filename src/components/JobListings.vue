@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router';
-import jobData from '@/jobs.json';
+// import jobData from '@/jobs.json';
 import { ref, defineProps } from 'vue';
 import JobListing from '@/components/JobListing.vue';
 
@@ -13,7 +13,8 @@ defineProps({
 });
 
 // Similar to make this useState in react
-const jobs = ref(jobData);
+// const jobs = ref(jobData);
+const jobs = ref([]);
 // console.log(jobs.value);
 </script>
 
