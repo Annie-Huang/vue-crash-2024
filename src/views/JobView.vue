@@ -34,15 +34,15 @@ onMounted(async () => {
           <div
             class="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
           >
-            <div class="text-gray-500 mb-4">Full-Time</div>
-            <h1 class="text-3xl font-bold mb-4">Senior Vue Developer</h1>
+            <div class="text-gray-500 mb-4">{{ state.job.type }}</div>
+            <h1 class="text-3xl font-bold mb-4">{{ state.job.title }}</h1>
             <div
               class="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
             >
               <i
                 class="fa-solid fa-location-dot text-lg text-orange-700 mr-2"
               ></i>
-              <p class="text-orange-700">Boston, MA</p>
+              <p class="text-orange-700">{{ state.job.location }}</p>
             </div>
           </div>
 
@@ -52,15 +52,12 @@ onMounted(async () => {
             </h3>
 
             <p class="mb-4">
-              We are seeking a talented Front-End Developer to join our team in
-              Boston, MA. The ideal candidate will have strong skills in HTML,
-              CSS, and JavaScript, with experience working with modern
-              JavaScript frameworks such as Vue or Angular.
+              {{ state.job.description }}
             </p>
 
             <h3 class="text-green-800 text-lg font-bold mb-2">Salary</h3>
 
-            <p class="mb-4">$70k - $80K / Year</p>
+            <p class="mb-4">{{ state.job.salary }} / Year</p>
           </div>
         </main>
 
@@ -70,13 +67,10 @@ onMounted(async () => {
           <div class="bg-white p-6 rounded-lg shadow-md">
             <h3 class="text-xl font-bold mb-6">Company Info</h3>
 
-            <h2 class="text-2xl">NewTek Solutions</h2>
+            <h2 class="text-2xl">{{ state.job.company.name }}</h2>
 
             <p class="my-2">
-              NewTek Solutions is a leading technology company specializing in
-              web development and digital solutions. We pride ourselves on
-              delivering high-quality products and services to our clients while
-              fostering a collaborative and innovative work environment.
+              {{ state.job.company.description }}
             </p>
 
             <hr class="my-4" />
@@ -84,12 +78,14 @@ onMounted(async () => {
             <h3 class="text-xl">Contact Email:</h3>
 
             <p class="my-2 bg-green-100 p-2 font-bold">
-              contact@newteksolutions.com
+              {{ state.job.company.contactEmail }}
             </p>
 
             <h3 class="text-xl">Contact Phone:</h3>
 
-            <p class="my-2 bg-green-100 p-2 font-bold">555-555-5555</p>
+            <p class="my-2 bg-green-100 p-2 font-bold">
+              {{ state.job.company.contactPhone }}
+            </p>
           </div>
 
           <!-- Manage -->
