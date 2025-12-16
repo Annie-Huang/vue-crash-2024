@@ -49,6 +49,7 @@ const form = reactive({
             >
             <input
               type="text"
+              v-model="form.title"
               id="name"
               name="name"
               class="border rounded w-full py-2 px-3 mb-2"
@@ -62,6 +63,7 @@ const form = reactive({
             >
             <textarea
               id="description"
+              v-model="form.description"
               name="description"
               class="border rounded w-full py-2 px-3"
               rows="4"
@@ -75,6 +77,7 @@ const form = reactive({
             >
             <select
               id="salary"
+              v-model="form.salary"
               name="salary"
               class="border rounded w-full py-2 px-3"
               required
@@ -97,6 +100,7 @@ const form = reactive({
             <label class="block text-gray-700 font-bold mb-2"> Location </label>
             <input
               type="text"
+              v-model="form.location"
               id="location"
               name="location"
               class="border rounded w-full py-2 px-3 mb-2"
