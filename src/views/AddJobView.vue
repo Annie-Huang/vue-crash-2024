@@ -30,6 +30,7 @@ const form = reactive({
               >Job Type</label
             >
             <select
+              v-model="form.type"
               id="type"
               name="type"
               class="border rounded w-full py-2 px-3"
