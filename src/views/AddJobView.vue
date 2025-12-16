@@ -117,6 +117,7 @@ const form = reactive({
             >
             <input
               type="text"
+              v-model="form.company.name"
               id="company"
               name="company"
               class="border rounded w-full py-2 px-3"
@@ -132,6 +133,7 @@ const form = reactive({
             >
             <textarea
               id="company_description"
+              v-model="form.company.description"
               name="company_description"
               class="border rounded w-full py-2 px-3"
               rows="4"
@@ -147,6 +149,7 @@ const form = reactive({
             >
             <input
               type="email"
+              v-model="form.company.contactEmail"
               id="contact_email"
               name="contact_email"
               class="border rounded w-full py-2 px-3"
@@ -162,6 +165,7 @@ const form = reactive({
             >
             <input
               type="tel"
+              v-model="form.company.contactPhone"
               id="contact_phone"
               name="contact_phone"
               class="border rounded w-full py-2 px-3"
