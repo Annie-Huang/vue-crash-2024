@@ -83,34 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "2c8f",
-      "title": "Annie Huang",
-      "type": "Full-Time",
-      "location": "MITCHAM",
-      "description": "ewafew",
-      "salary": "$125K - $150K",
-      "company": {
-        "name": "fewafewa",
-        "description": "35434",
-        "contactEmail": "annie.hn@gmail.com",
-        "contactPhone": "0401769264"
-      }
-    },
-    {
-      "id": "dab4",
-      "title": "Annie Huang",
-      "type": "Full-Time",
-      "location": "MITCHAM",
-      "description": "21E2d",
-      "salary": "$80K - $90K",
-      "company": {
-        "name": "ewaf",
-        "description": "fewaef",
-        "contactEmail": "annie.hn@gmail.com",
-        "contactPhone": "0401769264"
-      }
     }
   ]
 }
