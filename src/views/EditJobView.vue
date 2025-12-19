@@ -3,6 +3,12 @@ import { reactive } from 'vue';
 import axios from 'axios';
 import router from '@/router';
 import { useToast } from 'vue-toastification';
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const router = useRouter();
+
+const jobId = route.params.id;
 
 const form = reactive({
   type: 'Full-Time',
@@ -16,6 +22,11 @@ const form = reactive({
     contactEmail: '',
     contactPhone: '',
   },
+});
+
+const state = reactive({
+  job: {},
+  isLoading: true,
 });
 
 const toast = useToast();
