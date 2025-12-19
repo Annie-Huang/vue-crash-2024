@@ -1,11 +1,11 @@
 <script setup>
+import router from '@/router';
 import { onMounted, reactive } from 'vue';
 import axios from 'axios';
 import { useToast } from 'vue-toastification';
-import { useRoute, useRouter } from 'vue-router';
+import { useRoute } from 'vue-router';
 
 const route = useRoute();
-const router = useRouter();
 
 const jobId = route.params.id;
 
