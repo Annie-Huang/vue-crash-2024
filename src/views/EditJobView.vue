@@ -1,7 +1,6 @@
 <script setup>
-import { reactive } from 'vue';
+import { onMounted, reactive } from 'vue';
 import axios from 'axios';
-import router from '@/router';
 import { useToast } from 'vue-toastification';
 import { useRoute, useRouter } from 'vue-router';
 
@@ -57,6 +56,17 @@ const handleSubmit = async () => {
     toast.error('Job Was Not Added');
   }
 };
+
+onMounted(async () => {
+  try {
+    const response = await axios.get(`/api/jobs/${jobId}`);
+    state.job = response.data;
+  } catch (error) {
+    console.error('Error fetching jobs', error);
+  } finally {
+    state.isLoading = false;
+  }
+});
 </script>
 
 <template>
